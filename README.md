@@ -89,7 +89,7 @@ The entry point of the pipeline. It runs on a schedule and initializes the scrap
 *   **Role**: Determines the total number of search pages for various transaction types (e.g., houses for sale, apartments for rent).
 *   **Action**: Partitions the total search volume into batches of pages (e.g., 120 pages per batch) and sends them to the Discovery SQS queue.
 
-### 2. [Discovery Worker](./discovery_worker) (IDs Batch Crawler)
+### 2. [Discovery Worker](./discovery_worker)
 The "search engine" of the pipeline.
 *   **Role**: Processes batches of search results to find new property listings.
 *   **Action**: 
@@ -99,7 +99,7 @@ The "search engine" of the pipeline.
     4. Forwards only **new** IDs (ID > Watermark) to the Extractor SQS queue.
     5. Updates the Watermark with the highest ID found.
 
-### 3. [Extractor Worker](./extractor_worker) (Ads Batch Crawler)
+### 3. [Extractor Worker](./extractor_worker)
 The "deep scraper" of the pipeline.
 *   **Role**: Performs detailed extraction of individual property data.
 *   **Action**: Fetches comprehensive details for each property (price, surface area, energy class, bedrooms, etc.) and uploads the final structured JSON objects to S3.

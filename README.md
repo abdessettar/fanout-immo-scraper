@@ -2,7 +2,7 @@
 
 A serverless, scalable, and resilient data pipeline designed to scrape real estate listings from [Immoweb](https://www.immoweb.be/). Built using AWS Lambda, SQS, S3, and dynamic IP rotation techniques to ensure high availability and bypass anti-bot measures.
 
-> **Note:** This repository contains only the raw source code and is not directly linked to the code deployed in AWS. This project is shared for informational purposes; deploying these functions to AWS falls outside the current scope of this repository.
+> **Note:** This repository contains only the raw source code and is not directly linked to the code deployed in AWS. This project is shared for informational purposes; deploying these functions to AWS falls outside the current scope of this repository. An explanation of the project is available in [the following article](https://abdessettar.xyz/projects/serverless-at-scale-real-estate-scraper).
 
 >**Disclaimer:** *The project was developed solely for educational use, with the goal of learning efficient data crawling techniques and gaining experience with aws cloud and architectural concepts. Its code should not be used in high-volume or unauthorized scraping. Please always comply with a website’s `robots.txt` file and its Terms of Service. There is a team of humans behind every website, be nice to them ;).
 
